@@ -1,3 +1,0 @@
-No
-No Do while in python
-lambda function
