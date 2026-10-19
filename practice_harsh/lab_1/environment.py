@@ -2,7 +2,7 @@ import numpy as np
 class Environment:
     MAX_LIMIT = 10
     def reset(self, seed= None):
-        rng = np.random.default_rng(seed)
+        rng = np.random.default_rng(seed) 
         self.secret= rng.integers(1,101)
         self.queries=0
         self.episode = True
