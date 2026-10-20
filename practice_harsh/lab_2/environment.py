@@ -23,7 +23,7 @@ class Environment:
         }
 
     def ask(self, direction):
-        if (not self.internal_track["done"]):
+        if (not self.learning_data["done"]):
             x,y =self.internal_track["position"]
             if (direction=="UP"):
                 if(y>0 and GRID[y-1][x] is not "#"):
