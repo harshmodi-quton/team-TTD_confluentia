@@ -2,6 +2,7 @@ from environment import Environment
 from policy import Bts
 from policy import Value_Learning
 from policy import Q_Learning
+from scorer import do_all
 import json
 env = Environment()
 data ={}
@@ -40,4 +41,6 @@ while (env.learning_data["done"]):
     i+=1
 
 with open ("Documentation.json", "w") as f:
-    json.dump (data)
+    json.dump (data,f)
+
+do_all()
