@@ -12,7 +12,7 @@ q_learning = Q_Learning()
 env.reset()
 i=1
 
-while (env.learning_data["done"]):
+while (not env.learning_data["done"]):
     history = env.ask(bts.move())
     bts.analyse(history)
     data["bts"][i] = history
@@ -23,7 +23,7 @@ while (env.learning_data["done"]):
 env.reset()
 i=1
 
-while (env.learning_data["done"]):
+while (not env.learning_data["done"]):
     history = env.ask(value_learning.move())
     value_learning.analyse(history)
     data["value_learning"][i] = history
@@ -34,7 +34,7 @@ while (env.learning_data["done"]):
 env.reset()
 i=1
 
-while (env.learning_data["done"]):
+while (not env.learning_data["done"]):
     history = env.ask(q_learning.move())
     q_learning.analyse(history)
     data["q_learning"][i] = history
