@@ -1,11 +1,13 @@
 from environment import Environment
-from Policy import bts
-from Policy import value_learning
-from Policy import q_learning
+from policy import Bts
+from policy import Value_Learning
+from policy import Q_Learning
 import json
 env = Environment()
 data ={}
-
+bts= Bts()
+value_learning = Value_Learning()
+q_learning = Q_Learning()
 env.reset()
 i=1
 
