@@ -83,8 +83,6 @@ class gridworld_env:
         
 
 
-
-
     def verify(self):
         # 05. Compute final Reward
         return 1.0-self.steps*0.02 if self.solved else 0.0
@@ -98,5 +96,3 @@ class gridworld_env:
 
 #3--qlearning--
 
-
-env = gridworld_env(); print(env.reset())
